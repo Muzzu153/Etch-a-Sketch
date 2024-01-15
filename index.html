@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div></div>
-    <h1>GRID</h1>
+    <div id="outer_container">
+        <div id="container"> </div>
+    </div>
+
     <div id="user-input">
 
         <div id="colourPicker_div">
-          <input type="color" name="options" id="colour_picker" value="Pick your colour">
-          <label for="colour_picker">Pick your Colour</label>
+            <input type="color" name="options" id="colour_picker" value="Pick your colour">
+            <label for="colour_picker">Pick your Colour</label>
         </div>
 
         <div class="rainbow_div">
-          <button id="rainbow">Rainbow</button>
+            <button id="rainbow">Rainbow</button>
         </div>
 
         <div id="shading_div">
@@ -34,5 +38,8 @@
         </div>
 
     </div>
+
+    <script src="./javascript/main.js" defer></script>
 </body>
+
 </html>
