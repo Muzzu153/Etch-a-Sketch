@@ -6,35 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Poiret+One&display=swap');
+    </style>
 </head>
 
 <body>
+
+    <!-- The grid container  -->
     <div id="outer_container">
         <div id="container"> </div>
     </div>
+    <!-- The grid container  -->
 
-    <div id="user-input">
+    <!-- options for the user to input  -->
+    <div id="user_input_container">
 
-        <div id="colourPicker_div">
-            <input type="color" name="options" id="colour_picker" value="Pick your colour">
-            <label for="colour_picker">Pick your Colour</label>
-        </div>
+        <!-- <input id="colour_picker" class="user_input" type="color" name="options" value="Pick your colour"> -->
 
-        <div class="rainbow_div">
-            <button id="rainbow">Rainbow</button>
-        </div>
+        <input type="color" class="user_input" name="" id="colour_picker" value="#000000">
+        <button class="user_input" id="rainbow">Rainbow</button>
 
-        <div id="shading_div">
-            <button id="shading">Shading</button>
-        </div>
 
-        <div id="eraser_div">
-            <button id="eraser">Eraser</button>
-        </div>
+        <button class="user_input" id="shading">Shading</button>
 
-        <div id="gridSize_div">
-            <input type="number" name="options" id="grid_size">
-            <label for="gride_size">Gride size</label>
+        <button class="user_input" id="eraser">Eraser</button>
+
+        <button class="user_input" id="clear">Clear</button>
+
+        <div style="color: white; font-weight: 600;" id="grid_size">16</div>
+        <div class="slider">
+            <div id="arrow_down"></div>
+            <input style="margin-bottom: 0;" class="user_input" type="range" min="2" max="100" value="16" name="options"
+                id="grid_range">
+            <div id="arrow_up"></div>
         </div>
 
     </div>
