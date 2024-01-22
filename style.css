@@ -1,43 +1,103 @@
-*, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+  font-family: "Poiret One", "Dosis", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #111235;
+  background-repeat: no-repeat;
 }
 
-#outer_container{
-    padding: 30px;
-    margin-bottom: 100px;
-    background-color: brown;
-    border: 2px solid white;
+#outer_container {
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: #52d3d8;
 }
 
-#container{
-    padding: 0px;
-    height: 550px;
-    /* border: 2px solid white; */
-    width: 550px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
+#container {
+  padding: 0px;
+  height: 220px;
+  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dcf2f1;
+  border-bottom: 2px solid #52d3d8;
 }
 
-.grid_square{
-    padding: 0;
-    margin: 0;
-    background-color: white;
-  /*  border-top: 0.01px solid rgb(0, 0, 0.01);*/
-/*    border-right: 0.01px solid rgb(0, 0, 0.01);̣̣*/
+.grid_square {
+  padding: 0;
+  margin: 0;
+  background-color: #dfebea;
+  border-top: 0.01px solid rgb(189, 188, 188);
+  border-right: 0.01px solid rgb(189, 189, 189);
 }
 
-.grid_square:hover{
-    background-color: red;
+.grid_square:hover {
+  background-color: red;
+}
+
+#user_input_container {
+  width: 200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_input {
+  width: 120px;
+  margin-bottom: 20px;
+  color: #01022b;
+  background-color: #b6bbc4;
+}
+
+button {
+  font-family: "Dosis", "Poiret One", sans-serif;
+  border-radius: 8px;
+  border: 2px solid #111235;
+  padding: 12px;
+  font-weight: 600;
+}
+
+button:hover {
+  transition: 0.5s ease;
+  border: 2px solid #52d3d8;
+  background-color: #d3dae7;
+  translate: 2s all ease;
+}
+
+label {
+  font-weight: 600;
+  color: white;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow_up {
+  margin-left: 10px;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #d3dae7;
+}
+
+#arrow_down {
+  margin-right: 10px;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #d3dae7;
 }
