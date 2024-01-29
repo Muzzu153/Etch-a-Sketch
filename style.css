@@ -21,6 +21,8 @@ body {
   padding: 20px;
   margin-bottom: 50px;
   background-color: #52d3d8;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px 3px #dfebea;
 }
 
 #container {
@@ -74,6 +76,11 @@ button:hover {
   border: 2px solid #52d3d8;
   background-color: #d3dae7;
   translate: 2s all ease;
+  cursor: pointer;
+}
+
+button:active{
+  transform: scale(0.96);
 }
 
 label {
@@ -86,6 +93,18 @@ label {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+#grid_range:hover{
+cursor: pointer;
+}
+
+.slider:hover{
+  cursor: pointer;
+}
+
+.toggle_change:active{
+  transform: scale(0.96);
 }
 
 #arrow_up {
