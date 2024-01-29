@@ -79,7 +79,7 @@ button:hover {
   cursor: pointer;
 }
 
-button:active{
+button:active {
   transform: scale(0.96);
 }
 
@@ -95,15 +95,15 @@ label {
   align-items: center;
 }
 
-#grid_range:hover{
-cursor: pointer;
-}
-
-.slider:hover{
+#grid_range:hover {
   cursor: pointer;
 }
 
-.toggle_change:active{
+.slider:hover {
+  cursor: pointer;
+}
+
+.toggle_change:active {
   transform: scale(0.96);
 }
 
@@ -119,4 +119,52 @@ cursor: pointer;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
   border-top: 10px solid #d3dae7;
+}
+
+@media (min-width: 768px) {
+  #outer_container {
+    margin-bottom: 20px;
+  }
+
+  #container {
+    height: 350px;
+    width: 350px;
+  }
+
+  #user_input_container {
+    width: 300px;
+    height: 500px;
+  }
+
+  .user_input {
+    width: 170px;
+  }
+
+  button {
+    font-size: larger;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    flex-direction: row;
+  }
+
+  #container {
+    height: 600px;
+    width: 600px;
+  }
+
+  #user_input_container {
+    width: 300px;
+    height: 500px;
+  }
+
+  .user_input {
+    width: 170px;
+  }
+
+  button {
+    font-size: larger;
+  }
 }
