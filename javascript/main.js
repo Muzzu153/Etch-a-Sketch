@@ -68,7 +68,7 @@ function getRandomColor() {
 }
 
 
-// A fucntion that clears the gridsquares from thier current colors  
+// A function that clears the gridsquares from thier current colors  
 function clearAll() {
   for (let box of container.children) {
     box.style.backgroundColor = '';
@@ -79,19 +79,25 @@ function clearAll() {
 
 // }
 
-
 colorPicker.addEventListener('change', ()=>{
+  // stores the current color picker value 
   currentColorMode = colorPicker.value;
 })
+
+
 rainbowButton.addEventListener('click', () => {
   // Set the current mode to rainbow
   currentColorMode = 'rainbow';
 });
+
+
 shadingButton.addEventListener('click', ()=>{
+  // Set the current mode to shading
   currentColorMode = 'shading';
 }); 
 
 eraseButton.addEventListener('click', () => {
+  // Set the current mode to erase
   currentColorMode = 'erase';
 });
 
@@ -104,13 +110,11 @@ range.addEventListener('change', () => {
   createGrid(range.value);
 });
 
-
 increaseSize.addEventListener('click', () => {
   range.value++;
   gridSize.textContent = range.value;
   createGrid(range.value);
 });
-
 
 decreaseSize.addEventListener('click', () => {
   range.value--;
